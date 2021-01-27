@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['ledary.com','www.ledary.com','127.0.0.1']
 
 INSTALLED_APPS = [
     'mainmenu',
+    'tasklist',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
