@@ -21,6 +21,7 @@ urlpatterns = [
     path('', include("mainmenu.urls")),
     path('tasklist/', include("tasklist.urls")),
     path('itisnewyear/', include("newyear.urls")),
-    path('flights/', include("flights.urls"))
+    path('flights/', include("flights.urls")),
+    path('user/', include("users.urls"))
 
 ]
