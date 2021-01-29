@@ -10,9 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-# please REMOVE imprt OS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# please REMOVE imprst OS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 from pathlib import Path
+
+from django.core.checks.messages import DEBUG
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,8 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'c7#6aot9i!c-4n=p_k6yb-2lc7px^n9emhy%bkic&t8cr_i$8t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#DEBUG = False
 DEBUG = True
-
 ALLOWED_HOSTS = ['ledary.com','www.ledary.com','127.0.0.1']
 #ALLOWED_HOSTS = ['ledary.com','www.ledary.com']
 
@@ -36,6 +38,8 @@ ALLOWED_HOSTS = ['ledary.com','www.ledary.com','127.0.0.1']
 INSTALLED_APPS = [
     'mainmenu',
     'tasklist',
+    'newyear',
+    'flights',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -85,15 +89,18 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 '''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'u1074205_ledary.com',
-	'USER': 'u1074205_ledary',
-	'PASSWORD': 'R0d3A4y7',
-	'HOST': 'localhost'
+	    'USER': 'u1074205_ledary',
+	    'PASSWORD': 'R0d3A4y7',
+	    'HOST': 'localhost',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_ALL_TABLES'"
+        },
     }
 }
 '''
@@ -136,4 +143,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT='static/'
-
