@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import os
+#import os
 # please REMOVE imprst OS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 from pathlib import Path
@@ -27,10 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'c7#6aot9i!c-4n=p_k6yb-2lc7px^n9emhy%bkic&t8cr_i$8t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = False
-DEBUG = True
-ALLOWED_HOSTS = ['ledary.com','www.ledary.com','127.0.0.1']
-#ALLOWED_HOSTS = ['ledary.com','www.ledary.com']
+DEBUG = False
+#DEBUG = True
+#ALLOWED_HOSTS = ['ledary.com','www.ledary.com','127.0.0.1']
+ALLOWED_HOSTS = ['ledary.com','www.ledary.com']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'newyear',
     'flights',
     'users',
+    'mail',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,7 +84,7 @@ WSGI_APPLICATION = 'ledary_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -104,7 +105,10 @@ DATABASES = {
         },
     }
 }
-'''
+
+
+# Custom user model
+AUTH_USER_MODEL = 'mail.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

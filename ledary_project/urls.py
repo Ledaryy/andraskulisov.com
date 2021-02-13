@@ -22,6 +22,7 @@ urlpatterns = [
     path('tasklist/', include("tasklist.urls")),
     path('itisnewyear/', include("newyear.urls")),
     path('flights/', include("flights.urls")),
-    path('user/', include("users.urls"))
+    path('user/', include("users.urls")),
+    path('mail/', include("mail.urls"))
 
 ]
