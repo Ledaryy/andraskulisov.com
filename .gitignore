@@ -1,0 +1,4 @@
+backend/backend/settings.py
+backend/backend/__pycache__/
+backend/map/migrations/
+static/
