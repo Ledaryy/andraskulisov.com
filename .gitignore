@@ -6,3 +6,4 @@ backend/db.sqlite3
 backend/map/__pycache__/
 backend/portfolio/__pycache__/
 backend/portfolio/migrations/
+TODO.md
