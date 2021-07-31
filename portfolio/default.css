@@ -7,6 +7,8 @@
 
     --mainText:black;
     --secondaryText:#4b5156;
+
+    --previewBg: rgb(251, 249, 243, 0.8);
 }
 
 
@@ -191,83 +193,47 @@ p, li, span, label, input, textarea {
 
 .right-column{
     grid-area: right-column;
+    display: grid;
+    align-content: center;
 }
 
-button {
-	background: rgba(0,0,0,0);
-	border: 2px solid #8d9a97;
-	color: #8d9a97;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding: 8px 15px;
-	margin: 20px;
-	font-weight: bold;
-	font-size: 0.85em;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+#preview{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
+    position: relative;
 }
 
-.stack {
-	margin: 20px auto;
-	width: 400px;
-	padding: 0;
-	position: relative;
-	max-width: 100%;
+.corner{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid #17a2b8;
+    background-color: #fff;
+    position: absolute;
 }
-
-.stack img {
-	max-width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: all 0.3s;
-}
-
-.stack img:last-child {
-	position: relative;
-}
-
-/* Side Grid */
-.stack-sidegrid img:first-child,
-.stack-sidegrid img:nth-child(2),
-.stack-sidegrid img:nth-child(3) {
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-
-.stack-sidegrid img:nth-child(4) {
-	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0;
-}
-
-.stack-sidegrid img:nth-child(3) {
-	-webkit-transform-origin: 100% 0;
-	transform-origin: 100% 0;
-}
-
-.stack-sidegrid img:nth-child(2) {
-	-webkit-transform-origin: 0 100%;
-	transform-origin: 0 100%;
-}
-
-.stack-sidegrid img:first-child {
-	-webkit-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
-}
-
-.stack-sidegrid.active img {
-	-webkit-transform: scale(0.48);
-	transform: scale(0.48);
-}
-
 
 @media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro-wrapper{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapperr'
+            'left-column'
+            'right-column'
+        ;
+    }
+
+    .right-column{
+        justify-content: center;
     }
 }
 
