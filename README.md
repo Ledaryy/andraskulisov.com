@@ -3,7 +3,7 @@
     My website!
   </h1>
    <h3 align="center">
-  https://ledary.com/
+  https://andraskulisov.com/
   </h3>
 
 <br/>
@@ -13,8 +13,11 @@
 - Django + React setup
 - Webpack and babel setup
 - Production server setup
+- Main part of HTML + CSS
+- Img, gifs, icons etc.
 
 ## Example:
-#### Live example: https://ledary.com/
-- not yet
-
+#### Live: https://andraskulisov.com/
+- apache2 and SSL was installed, but main files still not on the server
+- Screenshot
+<img src="https://image.prntscr.com/image/x5MANbaKQW6M7PwOSH8oVA.png"/>
