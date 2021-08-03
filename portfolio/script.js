@@ -1,4 +1,3 @@
-console.log('Its working')
 
 let theme = localStorage.getItem('theme')
 
@@ -40,9 +39,11 @@ function setTheme(mode){
 }
 
 function hover(element) {
-	element.setAttribute('src', 'gif/map.gif');
+	target = document.getElementById('london-map')
+	target.setAttribute('src', 'gif/map.gif');
   }
   
   function unhover(element) {
-	element.setAttribute('src', 'img/map.png');
+	target = document.getElementById('london-map')
+	target.setAttribute('src', 'img/map.png');
   }
