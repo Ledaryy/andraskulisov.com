@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="stylesheet" type="text/css" href="buttons.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
@@ -25,14 +26,32 @@
 			<div class="intro-wrapper">
 				<div class="nav-wrapper">
 
-					<a href="index.html">
-						<div class="dots-wrapper">
-							<div id="dot-1" class="browser-dot"></div>
-							<div id="dot-2" class="browser-dot"></div>
-							<div id="dot-3" class="browser-dot"></div>
+					<div class="icons-container">
+						<div class="icons-wrapper">
+							<div class="icon facebook">
+							  <div class="tooltip">Facebook</div>
+							  <span><i class="fab fa-facebook-f"></i></span>
+							</div>
+							<div class="icon twitter">
+							  <div class="tooltip">Twitter</div>
+							  <span><i class="fab fa-twitter"></i></span>
+							</div>
+							<div class="icon instagram">
+							  <div class="tooltip">Instagram</div>
+							  <span><i class="fab fa-instagram"></i></span>
+							</div>
+							<div class="icon github">
+							  <div class="tooltip">Github</div>
+							  <span><i class="fab fa-github"></i></span>
+							</div>
+							<div class="icon youtube">
+							  <div class="tooltip">Youtube</div>
+							  <span><i class="fab fa-youtube"></i></span>
+							</div>
 						</div>
-					</a>
-					
+					</div>
+
+			
 
 					<ul id="navigation">
 						<li><a href="index.html#contact">Contact</a></li>
@@ -112,12 +131,12 @@
 
 				
 				<div class="social-links">
-					<img id="social_img" src="images/follow.jpg">
+					<img id="social_img" src="img/git.png">
 					<h3>Find me on Twitter & Github</h3>
 
-					<a target="_blank" href="#">Github: ledaryy</a>
+					<a target="_blank" href="https://github.com/Ledaryy">Github: ledaryy</a>
 					<br>
-					<a target="_blank" href="#">Twitter: ledaryy</a>
+					<a target="_blank" href="https://twitter.com/home">Twitter: ledaryy</a>
 				</div>
 			</div>
 
@@ -131,19 +150,19 @@
 			<div class="post-wrapper">
 
 				<div>
-					<div class="post">
-						<img onmouseover="hover(this);" onmouseout="unhover(this);" class="thumbnail" src="img/map.png">
+					<div onmouseover="hover(this);" onmouseout="unhover(this);" class="post">
+						<img id ="london-map" class="thumbnail" src="img/map.png">
 						<div class="post-preview">
 							<h6 class="post-title">London Underground Map</h6>
 							<p class="post-intro">Interactive, Zoomable and Hi-Resolution map of the London underground system</p>
-							<a href="post.html">Read More</a>
+							<a href="https://github.com/Ledaryy/london_underground">Read More</a>
 						</div>
 					</div>
 				</div>
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="images/ecom.jpg">
+						<img class="thumbnail" src="#">
 						<div class="post-preview">
 							<h6 class="post-title">Simple twitter</h6>
 							<p class="post-intro">Copy of twitter</p>
@@ -184,5 +203,6 @@
 	</section> 
 
 	<script type="text/javascript" src="script.js"></script>
+	<script src="https://kit.fontawesome.com/6fd804395a.js" crossorigin="anonymous"></script>
 </body>
 </html>
