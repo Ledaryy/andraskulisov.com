@@ -38,12 +38,21 @@ function setTheme(mode){
 	localStorage.setItem('theme', mode)
 }
 
-function hover(element) {
+function hoverMap(element) {
 	target = document.getElementById('london-map')
 	target.setAttribute('src', 'gif/map.gif');
   }
   
-  function unhover(element) {
+  function unhoverMap(element) {
 	target = document.getElementById('london-map')
 	target.setAttribute('src', 'img/map.png');
+  }
+function hoverNetwork(element) {
+	target = document.getElementById('network')
+	target.setAttribute('src', 'gif/network.gif');
+  }
+  
+  function unhoverNetwork(element) {
+	target = document.getElementById('network')
+	target.setAttribute('src', 'img/network.png');
   }
