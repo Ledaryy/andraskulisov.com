@@ -15,9 +15,11 @@
 - Production server setup
 - Main part of HTML + CSS
 - Img, gifs, icons etc.
+- Auto turn on/off the server within time frames, to save the costs
 
 ## Example:
 #### Live: https://andraskulisov.com/
-- apache2 and SSL was installed, but main files still not on the server
+- apache2 and SSL was installed
+- production server is up (from 7AM to 10PM)
 - Screenshot
 <img src="https://image.prntscr.com/image/x5MANbaKQW6M7PwOSH8oVA.png"/>
