@@ -12,6 +12,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
+	<link rel="icon" type="image/png" href={% static "portfolio/favicon.ico" %}/>
 	<link rel="stylesheet" href={% static 'portfolio/default.css' %}>
 	<link rel="stylesheet" type="text/css" href={% static 'portfolio/buttons.css' %}>
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
@@ -207,7 +208,21 @@
 		</div>
 	</section> 
 
+	<script>
+    	var defaultStyle = "{% static 'portfolio/default.css' %}"
+		var blue = "{% static 'portfolio/blue.css' %}"
+		var green = "{% static 'portfolio/green.css' %}"
+		var purple = "{% static 'portfolio/purple.css' %}"
+
+		var mapGif = "{% static 'portfolio/gif/map.gif' %}"
+		var networkGif = "{% static 'portfolio/gif/network.gif' %}"
+		var mapPng = "{% static 'portfolio/img/map.png' %}"
+		var networkPng = "{% static 'portfolio/img/network.png' %}"
+	</script>
+
 	<script type="text/javascript" src={% static 'portfolio/script.js' %}></script>
 	<script src="https://kit.fontawesome.com/6fd804395a.js" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
