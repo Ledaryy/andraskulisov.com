@@ -12,8 +12,8 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="portfolio/default.css">
-	<link rel="stylesheet" type="text/css" href="buttons.css">
+	<link rel="stylesheet" href={% static 'portfolio/default.css' %}>
+	<link rel="stylesheet" type="text/css" href={% static 'portfolio/buttons.css' %}>
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
@@ -62,7 +62,7 @@
 				</div>
 
 				<div class="left-column">
-					<img id="profile_pic" src="img/Andras.png">
+					<img id="profile_pic" src={% static 'portfolio/img/Andras.png' %}>
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
@@ -111,7 +111,7 @@
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="Andras_Kulisov_CV.pdf">Download Resume</a></p>
+					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href={% static 'portfolio/Andras_Kulisov_CV.pdf' %}>Download Resume</a></p>
 
 					<div id="skills">
 						<ul>
@@ -136,7 +136,7 @@
 
 				
 				<div class="social-links">
-					<img id="social_img" src="img/git.png">
+					<img id="social_img" src={% static 'portfolio/img/git.png' %}>
 					<h3>Find me on Twitter & Github</h3>
 
 					<a target="_blank" href="https://github.com/Ledaryy">Github: ledaryy</a>
@@ -156,7 +156,7 @@
 
 				<div>
 					<div onmouseover="hoverMap(this);" onmouseout="unhoverMap(this);" class="post">
-						<img id ="london-map" class="thumbnail" src="img/map.png">
+						<img id ="london-map" class="thumbnail" src={% static 'portfolio/img/map.png' %}>
 						<div class="post-preview">
 							<h6 class="post-title">London Underground Map</h6>
 							<p class="post-intro">Interactive, Zoomable and Hi-Resolution map of the London underground system</p>
@@ -166,8 +166,8 @@
 				</div>
 
 				<div>
-					<div onmouseover="hoverNetwork(this);" onmouseout="unhoverNetwork(this);"" class="post">
-						<img id="network" class="thumbnail" src="img/network.png">
+					<div onmouseover="hoverNetwork(this);" onmouseout="unhoverNetwork(this);" class="post">
+						<img id="network" class="thumbnail" src={% static 'portfolio/img/network.png' %}>
 						<div class="post-preview">
 							<h6 class="post-title">Social Network</h6>
 							<p class="post-intro">aka Simple Twitter, was done with React & API & django</p>
@@ -207,7 +207,7 @@
 		</div>
 	</section> 
 
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src={% static 'portfolio/script.js' %}></script>
 	<script src="https://kit.fontawesome.com/6fd804395a.js" crossorigin="anonymous"></script>
 </body>
 </html>
