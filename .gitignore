@@ -1,9 +1,8 @@
-backend/backend/settings.py
 backend/backend/__pycache__/
-backend/map/migrations/
 backend/static
 backend/db.sqlite3
 backend/map/__pycache__/
 backend/portfolio/__pycache__/
-backend/portfolio/migrations/
-TODO.md
+keys/
+AWS_config/
+*.env
