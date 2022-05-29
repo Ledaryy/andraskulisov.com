@@ -16,23 +16,11 @@
 - Img, gifs, icons etc.
 - Auto turn on/off the server within time frames, to save the costs
 
-## Example:
-#### Live: https://andraskulisov.com/
-- apache2 and SSL was installed
-- production server is up (from 7AM to 10PM)
+### Live: https://andraskulisov.com/
 
 # Previews:
 #### Main page:
-<img src="https://image.prntscr.com/image/ZRxdHtjUQI_oLtAs8NGkRw.png"/>
+<img src="https://img001.prntscr.com/file/img001/BRSR9FL1QFiMv-lKIxLmag.png"/>
 
-#### Preview:
-<img src="https://media.giphy.com/media/m4OPCejfokzppia2EY/giphy.gif"/> 
-
-#### Mobile Preview:
-<img src="https://media.giphy.com/media/2X8yCFOIbvM8Rx0AOR/giphy.gif"/>
-
-#### Themes Preview:
-<img src="https://media.giphy.com/media/PKjUyP6SoyytOsvJBb/giphy.gif"/>
-
-#### Social-links Preview:
-<img src="https://media.giphy.com/media/tttkEUc549yPzfuqDV/giphy.gif"/>
+#### Mobile:
+<img src="https://img001.prntscr.com/file/img001/mGBOoxaUQL6trO09Eg_XaQ.png"/>
