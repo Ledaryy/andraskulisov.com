@@ -46,7 +46,7 @@
   top: 0;
   font-size: 14px;
   background-color: #ffffff;
-  color: #ffffff;
+  color: black;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -111,5 +111,12 @@
 .icons-wrapper .youtube:hover .tooltip,
 .icons-wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
+  color: #ffffff;
+}
+
+.icons-wrapper .linkedin:hover,
+.icons-wrapper .linkedin:hover .tooltip,
+.icons-wrapper .linkedin:hover .tooltip::before {
+  background-color: #0A66C2;
   color: #ffffff;
 }

@@ -31,25 +31,23 @@
 
 					<div class="icons-container">
 						<div class="icons-wrapper">
-							<div class="icon facebook">
-							  <div class="tooltip">Facebook</div>
-							  <span><i class="fab fa-facebook-f"></i></span>
+							<div class="icon github">
+								<div class="tooltip">Github</div>
+								<a href="https://github.com/Ledaryy">
+									<span><i class="fab fa-github"></i></span>
+								</a>
+							</div>
+							<div class="icon linkedin">
+								<div class="tooltip">LinkedIn</div>
+								<a href="https://www.linkedin.com/in/andras-kulisov/">
+									<span><i class="fab fa-linkedin"></i></span>
+								</a>
 							</div>
 							<div class="icon twitter">
-							  <div class="tooltip">Twitter</div>
-							  <span><i class="fab fa-twitter"></i></span>
-							</div>
-							<div class="icon instagram">
-							  <div class="tooltip">Instagram</div>
-							  <span><i class="fab fa-instagram"></i></span>
-							</div>
-							<div class="icon github">
-							  <div class="tooltip">Github</div>
-							  <span><i class="fab fa-github"></i></span>
-							</div>
-							<div class="icon youtube">
-							  <div class="tooltip">Youtube</div>
-							  <span><i class="fab fa-youtube"></i></span>
+								<div class="tooltip">Twitter</div>
+								<a href="https://twitter.com/ledaryy">
+									<span><i class="fab fa-twitter"></i></span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -57,13 +55,13 @@
 			
 
 					<ul id="navigation">
-						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="/#contact">Contact</a></li>
 
 					</ul>
 				</div>
 
 				<div class="left-column">
-					<img id="profile_pic" src={% static 'portfolio/img/Andras.png' %}>
+					<img id="profile_pic" src={% static 'portfolio/img/Andras.jpg' %}>
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
@@ -83,7 +81,7 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>What I Do</h3>
-							<p>I'm a junior developer, enjoy developing websites and creating amazing things.</p>
+							<p>I'm a backend software developer, focused on high performing systems.</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -99,36 +97,35 @@
 			<div class="about-wrapper">
 				<div class="about-me">
 					<h4>More about me</h4>
-
-					<p>BSc Computer and Software engineering (1st Class) undergraduate student with experience in software development.</p>
-
+					
+					<p>BSc Computer and Software engineering (1st Class).</p>
+					
 					<p> Detail-oriented and self-driven,
 						Software Developer with a proven track record of success in developing and
 						implementing web-based solutions, maintaining and updating web applications,
 						and improving the whole programming process.</p>
 
-
 					<hr>
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href={% static 'portfolio/Andras_Kulisov_CV.pdf' %}>Download Resume</a></p>
+					<p>Fullstack Developer with primary focus on Django + React: <a target="_blank" href={% static 'portfolio/Andras_Kulisov_CV.pdf' %}>Download Resume</a></p>
 
 					<div id="skills">
 						<ul>
 							<li>Python</li>
 							<li>Django</li>
-							<li>JavaScript</li>
-							<li>React</li>
-                            <li>HTML/CSS</li>
+							<li>PostgreSQL</li>
+							<li>Docker</li>
+                            <li>AWS/Azure</li>
 						</ul>
                         
 						<ul>
-                            <li>Webpack</li>
-							<li>Docker</li>
-							<li>AWS</li>
-							<li>Heroku</li>
-                            <li>MySQL</li>
+                            <li>HTML5/CSS</li>
+							<li>JavaScript</li>
+							<li>React</li>
+							<li>GraphQl</li>
+                            <li>Ubuntu</li>
 						</ul>
 
 					</div>
@@ -160,7 +157,7 @@
 						<img id ="london-map" class="thumbnail" src={% static 'portfolio/img/map.png' %}>
 						<div class="post-preview">
 							<h6 class="post-title">London Underground Map</h6>
-							<p class="post-intro">Interactive, Zoomable and Hi-Resolution map of the London underground system</p>
+							<p class="post-intro">(hover me!) Interactive, Zoomable and Hi-Resolution map of the London underground system</p>
 							<a href="https://github.com/Ledaryy/london_underground">Read More</a>
 						</div>
 					</div>
@@ -177,7 +174,17 @@
 					</div>
 				</div>
 
-				
+				<div>
+					<div class="post">
+						<img id="network" class="thumbnail" src={% static 'portfolio/img/bots.png' %}>
+						<div class="post-preview">
+							<h6 class="post-title">Bots Management System</h6>
+							<p class="post-intro">Django admin based panel, for manipulating bots</p>
+							<a href="https://github.com/Ledaryy/discord_bots">Read More</a>
+						</div>
+					</div>
+				</div>
+
 
 			</div>
 		</div>
@@ -188,20 +195,20 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="https://formspree.io/f/xyyoobke" method="POST" onsubmit="this.submit(); this.reset(); return false;">
 				<a name="contact"></a>
 
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" type="text" name="name" required>
 
 				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" name="subject" required>
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" type="text" name="email" required>
 
 				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<textarea class="input-field" name="message" required></textarea>
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
