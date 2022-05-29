@@ -1,0 +1,30 @@
+version: '2.4'
+
+volumes:
+  static_volume:
+
+services:
+
+  nginx:
+    image: portfolio/nginx
+    build: ../webhost/nginx
+    volumes:
+      - static_volume:/code/staticfiles
+    ports:
+      - 80:80
+    depends_on:
+      - web
+
+  web:
+    restart: always
+    image: portfolio/web
+    build:
+      context: ../webhost
+      dockerfile: ./Docker/Dockerfile.local
+    expose:
+      - 8000
+    volumes:
+      - ../webhost:/code
+      - static_volume:/code/staticfiles
+    env_file:
+      - ../webhost/.env.dev
