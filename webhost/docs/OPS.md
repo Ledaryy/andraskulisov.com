@@ -1,2 +1,2 @@
 # Start
-sudo bash ./deploy.sh
+sudo bash deploy.sh
