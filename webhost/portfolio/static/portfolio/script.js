@@ -62,8 +62,8 @@ async function handleSubmit(event) {
 event.preventDefault();
 var status = document.getElementById("my-form-status");
 var data = new FormData(event.target);
-fetch(event.target.action, {
-	method: form.method,
+fetch("https://formspree.io/f/xyyoobke", {
+	method: "POST",
 	body: data,
 	headers: {
 		'Accept': 'application/json'
