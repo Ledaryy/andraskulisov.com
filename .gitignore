@@ -1,5 +1,4 @@
 __pycache__/
-webhost/static/
 webhost/staticfiles/
 backend/db.sqlite3
 backend/map/__pycache__/
