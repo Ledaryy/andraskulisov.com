@@ -15,8 +15,7 @@
 echo "Deploying to the production environment"
 
 echo "Removing old containers"
-sudo docker rm -f compose_nginx_1 &&
-sudo docker rm -f compose_web_1 &&
+sudo docker-compose -f ./compose/docker-compose.prod.yml down -v &&
 
 echo "Updating the code"
 sudo git pull &&
