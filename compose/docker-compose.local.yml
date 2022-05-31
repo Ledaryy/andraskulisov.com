@@ -9,7 +9,7 @@ services:
     image: portfolio/nginx
     build: ../webhost/nginx
     volumes:
-      - static_volume:/code/staticfiles
+      - static_volume:/code/static
     ports:
       - 80:80
     depends_on:
@@ -25,6 +25,6 @@ services:
       - 8000
     volumes:
       - ../webhost:/code
-      - static_volume:/code/staticfiles
+      - static_volume:/code/static
     env_file:
       - ../webhost/.env.dev
