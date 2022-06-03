@@ -60,7 +60,7 @@ var form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
 event.preventDefault();
-var status = document.getElementById("submit-btn");
+var send_button = document.getElementById("submit-btn");
 var data = new FormData(event.target);
 fetch("https://formspree.io/f/xyyoobke", {
 	method: "POST",
@@ -70,21 +70,23 @@ fetch("https://formspree.io/f/xyyoobke", {
 	}
 }).then(response => {
 	if (response.ok) {
-	status.value = "Thanks for your submission!";
+	send_button.value = "Thanks for your submission!";
+	send_button.disabled = true;
+	send_button.style.color = "#00ff00";
 	form.reset()
 	return false;
 	} else {
 	response.json().then(data => {
 		if (Object.hasOwn(data, 'errors')) {
-		status.value = data["errors"].map(error => error["message"]).join(", ")
+		send_button.value = data["errors"].map(error => error["message"]).join(", ")
 		} else {
-		status.value = "Oops! There was a problem submitting your form"
+		send_button.value = "Oops! There was a problem submitting your form"
 		}
 	return false;
 	})
 	}
 }).catch(error => {
-	status.value = "Oops! There was a problem submitting your form"
+	send_button.value = "Oops! There was a problem submitting your form"
 });
 }
 form.addEventListener("submit", handleSubmit)
