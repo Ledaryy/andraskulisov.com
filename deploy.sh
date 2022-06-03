@@ -24,7 +24,7 @@ echo "Clearing the old images"
 sudo docker image prune -a -f &&
 
 echo "Clearing the port 80"
-sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill -9 &&
+sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 
 echo "Building new containers and starting them"
 sudo docker-compose -f ./compose/docker-compose.prod.yml up --build &&
